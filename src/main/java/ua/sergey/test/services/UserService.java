@@ -8,6 +8,7 @@ import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import ua.sergey.test.domain.Role;
 import ua.sergey.test.domain.User;
@@ -23,17 +24,24 @@ public class UserService implements UserDetailsService {
 
     @PostConstruct
     public void init() {
-        if (!userDao.findByUsername("user").isPresent()) {
-            userDao.save(User.builder()
-                    .username("user")
-                    .password("user")
-                    .authorities(ImmutableList.of(Role.USER))
-                    .accountNonExpired(true)
-                    .accountNonLocked(true)
-                    .credentialsNonExpired(true)
-                    .enabled(true)
-                    .build());
-        }
+
+        userDao.findByUsername("user").ifPresent(user -> {
+            user.setPassword(new BCryptPasswordEncoder().encode("user"));
+            userDao.save(user);
+        });
+
+
+//        if (!userDao.findByUsername("user").isPresent()) {
+//            userDao.save(User.builder()
+//                    .username("user")
+//                    .password("user")
+//                    .authorities(ImmutableList.of(Role.USER))
+//                    .accountNonExpired(true)
+//                    .accountNonLocked(true)
+//                    .credentialsNonExpired(true)
+//                    .enabled(true)
+//                    .build());
+//        }
     }
 
     @Override
