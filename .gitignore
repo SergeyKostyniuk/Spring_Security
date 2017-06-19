@@ -1,3 +1,7 @@
+ *.iml
+ /out/
+ /build/
+
 # Compiled class file
 *.class
 
@@ -16,10 +20,28 @@
 *.ear
 *.zip
 *.tar.gz
-*.rar
+*.rarq
 
-src/test/
+hs_err_pid*
+.idea/inspectionProfiles/
 target/classes/ua/
 target/generated-sources/
 target/generated-test-sources/
-target/test-classes/
+target/spring-boot-1.0-SNAPSHOT.jar
+target/test-classes/ua/
+.idea/libraries/Maven__commons_codec_commons_codec_1_10.xml
+.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_2.xml
+.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_6.xml
+.idea/uiDesigner.xml
+.gitignore
+.idea/libraries/Maven__de_flapdoodle_embed_de_flapdoodle_embed_mongo_19_0.xml
+.idea/libraries/Maven__org_mongodb_bson_3_2_2.xml
+.idea/libraries/Maven__org_mongodb_mongodb_driver_3_2_2.xml
+.idea/libraries/Maven__org_mongodb_mongodb_driver_core_3_2_2.xml
+.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_mongodb_1_4_4_RELEASE.xml
+.idea/libraries/Maven__org_springframework_data_spring_data_commons_1_12_7_RELEASE.xml
+.idea/libraries/Maven__org_springframework_data_spring_data_mongodb_1_9_7_RELEASE.xml
+.idea/libraries/Maven__org_springframework_spring_tx_4_3_6_RELEASE.xml
+.idea/
+Spring-Security.iml
+target/classes/application.yaml
