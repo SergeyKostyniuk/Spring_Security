@@ -21,18 +21,6 @@ public class UserService implements UserDetailsService {
     @Autowired
     private UserDao userDao;
 
-    @Id
-    private Object id;
-    @Indexed(unique = true)
-    private String username;
-    private List<Role> authorities;
-    private String password;
-    private boolean accountNonExpired;
-    private boolean accountNonLocked;
-    private boolean credentialsNonExpired;
-    private boolean enabled;
-
-
     @PostConstruct
     public void init() {
         if (!userDao.findByUsername("user").isPresent()) {
