@@ -3,6 +3,8 @@ package ua.sergey.test.services;
 
 import com.google.common.collect.ImmutableList;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -11,10 +13,41 @@ import ua.sergey.test.domain.Role;
 import ua.sergey.test.domain.User;
 import ua.sergey.test.persistence.UserDao;
 
+import javax.annotation.PostConstruct;
+import java.util.List;
+
 @Service
 public class UserService implements UserDetailsService {
     @Autowired
     private UserDao userDao;
+
+    @Id
+    private Object id;
+    @Indexed(unique = true)
+    private String username;
+    private List<Role> authorities;
+    private String password;
+    private boolean accountNonExpired;
+    private boolean accountNonLocked;
+    private boolean credentialsNonExpired;
+    private boolean enabled;
+
+
+    @PostConstruct
+    public void init() {
+        if (!userDao.findByUsername("user").isPresent()) {
+            userDao.save(User.builder()
+                    .username("user")
+                    .password("user")
+                    .authorities(ImmutableList.of(Role.USER))
+                    .accountNonExpired(true)
+                    .accountNonLocked(true)
+                    .credentialsNonExpired(true)
+                    .enabled(true)
+                    .build());
+        }
+    }
+
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         return userDao.findByUsername(username).orElse(null);

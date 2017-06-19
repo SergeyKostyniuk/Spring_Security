@@ -3,11 +3,11 @@ server:
 spring:
   mandatory-file-encoding: UTF-8
 
+  data:
+    mongodb:
+      database: mongoDB
 security:
  ignored: "/readme.txt"
  basic:
   enabled: true
  sessions: stateless
-# user:
-#   password: admin
-#   name: admin
