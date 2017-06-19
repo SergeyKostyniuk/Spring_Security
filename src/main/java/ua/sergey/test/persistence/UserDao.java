@@ -27,4 +27,8 @@ public class UserDao {
                         , User.class));
 
     }
+
+    public void save(@NonNull User user) {
+        mongoTemplate.save(user);
+    }
 }
