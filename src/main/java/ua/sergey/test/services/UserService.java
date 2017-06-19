@@ -9,22 +9,14 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 import ua.sergey.test.domain.Role;
 import ua.sergey.test.domain.User;
+import ua.sergey.test.persistence.UserDao;
 
 @Service
 public class UserService implements UserDetailsService {
     @Autowired
-    private  UserDao userDao;
+    private UserDao userDao;
     @Override
-    public UserDetails loadUserByUsername(String s) throws UsernameNotFoundException {
-
-        return User.builder()
-                .username("user")
-                    .password("user")
-                    .authorities(ImmutableList.of(Role.USER))
-                    .accountNonExpired(true)
-                .accountNonLocked(true)
-                .credentialsNonExpired(true)
-                .enabled(true)
-                .build();
+    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+        return userDao.findByUsername(username).orElse(null);
     }
 }
