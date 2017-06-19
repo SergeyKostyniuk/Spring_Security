@@ -14,10 +14,5 @@ public class Application {
         SpringApplication.run(Application.class, args);
     }
 
-   @Autowired
-    public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
-        auth.inMemoryAuthentication().withUser("user").password("user").roles("USER");
-   }
-
 }
 
