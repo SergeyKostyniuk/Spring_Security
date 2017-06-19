@@ -1,4 +1,8 @@
  *.iml
+ *.idea
+ target
+ .idea
+ .gitignore
  /out/
  /build/
 
@@ -33,7 +37,6 @@ target/test-classes/ua/
 .idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_2.xml
 .idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_6.xml
 .idea/uiDesigner.xml
-.gitignore
 .idea/libraries/Maven__de_flapdoodle_embed_de_flapdoodle_embed_mongo_19_0.xml
 .idea/libraries/Maven__org_mongodb_bson_3_2_2.xml
 .idea/libraries/Maven__org_mongodb_mongodb_driver_3_2_2.xml
@@ -45,3 +48,5 @@ target/test-classes/ua/
 .idea/
 Spring-Security.iml
 target/classes/application.yaml
+target/classes/templates/
+target/test-classes/
