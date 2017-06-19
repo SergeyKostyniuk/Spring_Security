@@ -8,6 +8,6 @@ security:
  basic:
   enabled: true
  sessions: stateless
- user:
-   password: admin
-   name: admin
+# user:
+#   password: admin
+#   name: admin
