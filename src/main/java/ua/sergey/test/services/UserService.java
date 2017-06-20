@@ -20,14 +20,6 @@ public class UserService implements UserDetailsService {
     @PostConstruct
     public void init() {
 
-//        userDao.findByUsername("user").ifPresent(user -> {
-//            user.setPassword(new BCryptPasswordEncoder().encode("user"));
-//            userDao.save(user);
-//        });
-//
-//
-//
-//
 //        if (!userDao.findByUsername("admin").isPresent()) {
 //            userDao.save(User.builder()
 //                    .username("admin")
