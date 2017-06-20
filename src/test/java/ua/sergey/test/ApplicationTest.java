@@ -14,7 +14,7 @@ public class ApplicationTest {
         String auth = "dXNlcjp1c2Vy";
         System.out.println(new String(Base64.getDecoder().decode(auth)));
 
-        System.out.println(new BCryptPasswordEncoder().encode("user"));
+        System.out.println(new BCryptPasswordEncoder().encode("admin"));
 
 
 

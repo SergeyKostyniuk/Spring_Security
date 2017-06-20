@@ -17,7 +17,7 @@ import java.util.List;
 @Document(collection = "users" )
 public class User implements UserDetails {
     @Id
-    private int id;
+    private Object id;
     @Indexed(unique = true)
     private String username;
     private List<Role> authorities;
