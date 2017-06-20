@@ -1,6 +1,5 @@
 package ua.sergey.test.domain;
 
-
 public enum UserField {
     USER_NAME("username");
 
@@ -13,8 +12,4 @@ public enum UserField {
     public String field() {
         return field;
     }
-
-///////////////////////////////////
-
-
 }
