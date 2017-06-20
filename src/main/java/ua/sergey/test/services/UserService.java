@@ -37,7 +37,17 @@ public class UserService implements UserDetailsService {
                     .enabled(true)
                     .build());
         }
-
+        if (!userDao.findByUsername("power").isPresent()) {
+            userDao.save(User.builder()
+                    .username("power")
+                    .password(new BCryptPasswordEncoder().encode("power"))
+                    .authorities(ImmutableList.of(Role.POWER_USER))
+                    .accountNonExpired(true)
+                    .accountNonLocked(true)
+                    .credentialsNonExpired(true)
+                    .enabled(true)
+                    .build());
+        }
     }
 
     @Override
