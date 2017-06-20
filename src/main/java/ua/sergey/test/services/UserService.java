@@ -20,34 +20,34 @@ public class UserService implements UserDetailsService {
     @PostConstruct
     public void init() {
 
-        userDao.findByUsername("user").ifPresent(user -> {
-            user.setPassword(new BCryptPasswordEncoder().encode("user"));
-            userDao.save(user);
-        });
-
-
-        if (!userDao.findByUsername("admin").isPresent()) {
-            userDao.save(User.builder()
-                    .username("admin")
-                    .password(new BCryptPasswordEncoder().encode("admin"))
-                    .authorities(ImmutableList.of(Role.ADMIN))
-                    .accountNonExpired(true)
-                    .accountNonLocked(true)
-                    .credentialsNonExpired(true)
-                    .enabled(true)
-                    .build());
-        }
-        if (!userDao.findByUsername("power").isPresent()) {
-            userDao.save(User.builder()
-                    .username("power")
-                    .password(new BCryptPasswordEncoder().encode("power"))
-                    .authorities(ImmutableList.of(Role.POWER_USER))
-                    .accountNonExpired(true)
-                    .accountNonLocked(true)
-                    .credentialsNonExpired(true)
-                    .enabled(true)
-                    .build());
-        }
+//        userDao.findByUsername("user").ifPresent(user -> {
+//            user.setPassword(new BCryptPasswordEncoder().encode("user"));
+//            userDao.save(user);
+//        });
+//
+//
+//        if (!userDao.findByUsername("admin").isPresent()) {
+//            userDao.save(User.builder()
+//                    .username("admin")
+//                    .password(new BCryptPasswordEncoder().encode("admin"))
+//                    .authorities(ImmutableList.of(Role.ADMIN))
+//                    .accountNonExpired(true)
+//                    .accountNonLocked(true)
+//                    .credentialsNonExpired(true)
+//                    .enabled(true)
+//                    .build());
+//        }
+//        if (!userDao.findByUsername("power").isPresent()) {
+//            userDao.save(User.builder()
+//                    .username("power")
+//                    .password(new BCryptPasswordEncoder().encode("power"))
+//                    .authorities(ImmutableList.of(Role.POWER_USER))
+//                    .accountNonExpired(true)
+//                    .accountNonLocked(true)
+//                    .credentialsNonExpired(true)
+//                    .enabled(true)
+//                    .build());
+//        }
     }
 
     @Override
