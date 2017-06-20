@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ddbb250-2d12-4d58-8f95-bd5248baf090" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.ftl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/sergey/test/Application.java" afterPath="$PROJECT_DIR$/src/main/java/ua/sergey/test/Application.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/sergey/test/SecurityConfig.java" afterPath="$PROJECT_DIR$/src/main/java/ua/sergey/test/SecurityConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/sergey/test/domain/Role.java" afterPath="$PROJECT_DIR$/src/main/java/ua/sergey/test/domain/Role.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/sergey/test/domain/User.java" afterPath="$PROJECT_DIR$/src/main/java/ua/sergey/test/domain/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/sergey/test/domain/UserField.java" afterPath="$PROJECT_DIR$/src/main/java/ua/sergey/test/domain/UserField.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/sergey/test/persistence/UserDao.java" afterPath="$PROJECT_DIR$/src/main/java/ua/sergey/test/persistence/UserDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/sergey/test/services/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/ua/sergey/test/services/UserService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/sergey/test/web/MainController.java" afterPath="$PROJECT_DIR$/src/main/java/ua/sergey/test/web/MainController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/index.ftl" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.ftl" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,15 +19,46 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="SecurityConfig.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SecurityConfig.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ua/sergey/test/SecurityConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107">
-              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state relative-caret-position="279">
+              <caret line="22" column="22" lean-forward="true" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
               <folding>
-                <element signature="e#1357#1358#0" expanded="true" />
-                <element signature="e#1407#1408#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#1377#1378#0" expanded="true" />
+                <element signature="e#1427#1428#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/sergey/test/web/MainController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="19" column="23" lean-forward="false" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.ftl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.ftl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" column="7" lean-forward="false" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.ftl" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login.ftl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="19" column="7" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -110,36 +138,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.yaml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application.yaml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ApplicationTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ua/sergey/test/ApplicationTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="16" column="44" lean-forward="true" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="69" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -163,7 +161,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/sergey/test/web/MainController.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/application.yaml" />
@@ -175,6 +172,9 @@
         <option value="$PROJECT_DIR$/src/main/java/ua/sergey/test/persistence/UserDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/sergey/test/Application.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/sergey/test/SecurityConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/sergey/test/web/MainController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/index.ftl" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/login.ftl" />
       </list>
     </option>
   </component>
@@ -296,11 +296,67 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Spring_Security" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Spring_Security" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -977,7 +1033,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1497867587909</updated>
-      <workItem from="1497867592191" duration="24773000" />
+      <workItem from="1497867592191" duration="25592000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1497869097927</created>
@@ -1126,7 +1182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1497915931678</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="refactoring)">
+      <created>1497916968452</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1497916968452</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1156,7 +1219,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24773000" />
+    <option name="totallyTimeSpent" value="25592000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="166" width="1456" height="876" extended-state="6" />
@@ -1222,7 +1285,8 @@
     <MESSAGE value="fixes UserDao" />
     <MESSAGE value="fixes configureGlobal" />
     <MESSAGE value="add BCryptPasswordEncoder" />
-    <option name="LAST_COMMIT_MESSAGE" value="add BCryptPasswordEncoder" />
+    <MESSAGE value="refactoring)" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactoring)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1257,14 +1321,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/stackoverflow.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1286,18 +1342,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/sergey/test/web/MainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="29" lean-forward="false" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#242#243#0" expanded="false" />
-            <element signature="e#272#273#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1406,12 +1450,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/sergey/test/SecurityConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state relative-caret-position="279">
+          <caret line="22" column="22" lean-forward="true" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
           <folding>
-            <element signature="e#1357#1358#0" expanded="true" />
-            <element signature="e#1407#1408#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1377#1378#0" expanded="true" />
+            <element signature="e#1427#1428#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/sergey/test/web/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="19" column="23" lean-forward="false" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="7" lean-forward="false" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="7" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
