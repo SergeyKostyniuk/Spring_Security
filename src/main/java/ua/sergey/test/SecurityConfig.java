@@ -14,6 +14,10 @@ import ua.sergey.test.services.UserService;
 @Configuration
 @EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter{
+    @Autowired
+    private UserService userService;
+
+
     @Override
     public void configure(HttpSecurity http) throws Exception {
         http
@@ -26,8 +30,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
                 .logout().permitAll();
     }
 
-    @Autowired
-    private UserService userService;
+
 
     @Bean
     public PasswordEncoder bcryptPasswordEncoder() {

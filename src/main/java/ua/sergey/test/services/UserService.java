@@ -26,6 +26,8 @@ public class UserService implements UserDetailsService {
 //        });
 //
 //
+//
+//
 //        if (!userDao.findByUsername("admin").isPresent()) {
 //            userDao.save(User.builder()
 //                    .username("admin")
@@ -42,6 +44,17 @@ public class UserService implements UserDetailsService {
 //                    .username("power")
 //                    .password(new BCryptPasswordEncoder().encode("power"))
 //                    .authorities(ImmutableList.of(Role.POWER_USER))
+//                    .accountNonExpired(true)
+//                    .accountNonLocked(true)
+//                    .credentialsNonExpired(true)
+//                    .enabled(true)
+//                    .build());
+//        }
+//                if (!userDao.findByUsername("owner").isPresent()) {
+//            userDao.save(User.builder()
+//                    .username("owner")
+//                    .password(new BCryptPasswordEncoder().encode("owner"))
+//                    .authorities(ImmutableList.of(Role.POWER_USER, Role.ADMIN, Role.USER))
 //                    .accountNonExpired(true)
 //                    .accountNonLocked(true)
 //                    .credentialsNonExpired(true)

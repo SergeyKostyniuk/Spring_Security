@@ -26,5 +26,6 @@ public class UserDao {
 
     public void save(@NonNull User user) {
         mongoTemplate.save(user);
-    }
+       }
+
 }
